@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg {
+            height: 200px;
+            background-color: indigo;
+        }
+
+        .card {
+            border: 2px solid indigo;
+            border-radius: 4px;
+            width: 400px;
+            margin: -152px auto 0;
+        }
+
+        .card-header {
+            background-image: url("./assets/image/background.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .card-header>h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .card-header>p {
+            text-align: center;
+            color: white;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body>span {
+            padding: 25px;
+        }
+
+        .group {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .group>span {
+            background-color: indigo;
+            color: white;
+            padding: 10px;
+        }
+
+        .group>input {
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: indigo;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="card">
+        <div class="card-header">
+            <h1>secure login</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card-body">
+            <div class="group">
+                <span>username</span>
+                <input placeholder="enter register mobile/email" type="text">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="group">
+                <span>class pin</span>
+                <input placeholder="enter 4 digit class pin" type="number" required min="4" max="4">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="group">
+                <span>password</span>
+                <input placeholder="enter password" type="password">
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">login</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
